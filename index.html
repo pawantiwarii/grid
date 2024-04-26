@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+        
+            /* grid-template-columns: 400px 800px ;
+            grid-template-rows: 100px 200px ; */
+
+            /* short hand to write grid template is - */
+            /* grid-template: 100px 200px / 400px 800px; */
+            /* In Px makes the grid fix and page behave irresonsvie */
+             /*                 row    /      column */
+             /* In the begnning short hand is not a good practice is bcz not 
+             to understand  */
+            
+            
+             /* grid auto  */
+             /* grid-template-rows: 100px auto ;
+             grid-template-columns: 200px auto; */
+
+             /* gird minmax */
+             grid-template-rows: 100px 200px;
+             grid-template-columns:200px minmax( 200px, 800px);
+
+        }
+        .container > *{
+            background-color: aqua;
+            border: 2px orange solid;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Grid</h1>
+    <div class="container">
+        <div class="grid-items-1">1</div>
+        <div class="grid-items-2">2</div>
+        <div class="grid-items-3">3</div>
+        <div class="grid-items-4">4</div>
+    </div>
+</body>
+</html>
